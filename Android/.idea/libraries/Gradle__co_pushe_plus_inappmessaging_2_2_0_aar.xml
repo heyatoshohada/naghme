@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: co.pushe.plus:inappmessaging:2.2.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/496d3287d286edfe17a695cab59d4ad2/jetified-inappmessaging-2.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/496d3287d286edfe17a695cab59d4ad2/jetified-inappmessaging-2.2.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
