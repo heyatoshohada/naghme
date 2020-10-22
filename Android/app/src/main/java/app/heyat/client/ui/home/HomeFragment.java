@@ -13,8 +13,9 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import app.heyat.client.R;
+import app.heyat.client.base.BaseFragment;
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends BaseFragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -29,6 +30,8 @@ public class HomeFragment extends Fragment {
 
     private void initialLayout(View view) {
 
+        TextView textView =view.findViewById(R.id.text_home);
+        textView.setText("HomeFragment");
     }
 
     private void initial() {
