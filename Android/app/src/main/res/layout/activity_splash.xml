@@ -5,39 +5,49 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
 
+    <!--    <ImageView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:contentDescription="@string/todo"-->
+    <!--        android:scaleType="centerCrop"-->
+    <!--        android:src="@drawable/splash_back" />-->
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="400dp"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:contentDescription="@string/todo"-->
+    <!--        android:src="@drawable/white_gradient" />-->
+
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/iv_main_activity_splash"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
         android:contentDescription="@string/todo"
         android:scaleType="centerCrop"
-        android:src="@drawable/splash_back" />
+        android:src="@drawable/logo" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_alignParentBottom="true"
-        android:contentDescription="@string/todo"
-        android:src="@drawable/white_gradient" />
-
-    <TextView
-        android:id="@+id/tv_main_activity_splash"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="80dp"
-        android:text="@string/splash_text"
-        android:textColor="@color/textColor"
-        android:textSize="16sp" />
+<!--    <TextView-->
+<!--        android:id="@+id/tv_main_activity_splash"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/iv_main_activity_splash"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginBottom="80dp"-->
+<!--        android:text="@string/splash_text"-->
+<!--        android:textColor="@color/textColor"-->
+<!--        android:textSize="16sp" />-->
 
     <ProgressBar
         android:id="@+id/pb_main_activity_splash"
-        android:layout_width="18dp"
-        android:layout_height="18dp"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-35dp"
         android:layout_marginBottom="30dp"
-        android:theme="@style/progressBarMain" />
+        android:theme="@style/progressBarMain"
+        android:visibility="gone" />
 
 </RelativeLayout>

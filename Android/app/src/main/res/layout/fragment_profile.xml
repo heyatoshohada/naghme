@@ -1,23 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.profile.ProfileFragment">
 
-    <TextView
-        android:id="@+id/text_profile"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_header_fragment_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="0dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tv_username_fragment_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/text"
+                android:textSize="16sp"
+                android:text="username"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageView
+                android:id="@+id/iv_setting_fragment_profile"
+                android:layout_width="39.1dp"
+                android:layout_height="42.7dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="14.5dp"
+                android:layout_marginBottom="2dp"
+                android:contentDescription="@string/todo"
+                android:padding="10dp"
+                android:tint="@color/darkGray"
+                android:src="@drawable/ic_settings_black_24dp" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_back_fragment_profile"-->
+<!--                android:layout_width="39.1dp"-->
+<!--                android:layout_height="42.7dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginEnd="14.5dp"-->
+<!--                android:layout_marginBottom="2dp"-->
+<!--                android:contentDescription="@string/to_do"-->
+<!--                android:padding="10dp"-->
+<!--                android:src="@drawable/back"-->
+<!--                android:visibility="gone" />-->
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -2,16 +2,17 @@ package app.heyat.client;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
-import android.widget.ProgressBar;
-import android.widget.TextView;
+import android.view.animation.AlphaAnimation;
+import android.widget.ImageView;
 
 import app.heyat.client.base.BaseActivity;
+import app.heyat.client.ui.login.LoginActivity;
 
 public class SplashActivity extends BaseActivity {
 
-    private ProgressBar mProgressBarMain;
-    private TextView mTextViewMain;
+    private ImageView mImageViewMain;
+//    private ProgressBar mProgressBarMain;
+//    private TextView mTextViewMain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,24 +24,36 @@ public class SplashActivity extends BaseActivity {
     }
 
     private void initialLayout() {
-        mProgressBarMain = findViewById(R.id.pb_main_activity_splash);
-        mTextViewMain = findViewById(R.id.tv_main_activity_splash);
+        mImageViewMain = findViewById(R.id.iv_main_activity_splash);
+//        mProgressBarMain = findViewById(R.id.pb_main_activity_splash);
+//        mTextViewMain = findViewById(R.id.tv_main_activity_splash);
     }
 
     private void initial() {
-        mProgressBarMain.setVisibility(View.VISIBLE);
+//        mProgressBarMain.setVisibility(View.VISIBLE);
 
-        new Handler().postDelayed(this::start, 2000);
+        AlphaAnimation start = new AlphaAnimation(0.0f, 1.0f);
+        start.setDuration(2000);
+        start.setFillAfter(true);
+        mImageViewMain.startAnimation(start);
+
+        new Handler().postDelayed(() -> {
+            AlphaAnimation end = new AlphaAnimation(1.0f, 0.0f);
+            end.setDuration(2000);
+            end.setFillAfter(true);
+            mImageViewMain.startAnimation(end);
+        }, 2000);
+
+
+        new Handler().postDelayed(this::start, 4000);
     }
 
     private void start() {
-        mProgressBarMain.setVisibility(View.GONE);
-
-        new Handler().postDelayed(() -> {
+        if (getSharedLogin())
             startActivity(MainActivity.newIntent(this));
-            finish();
-        }, 1000);
+        else startActivity(LoginActivity.newIntent(this));
 
+        finish();
     }
 
 }
