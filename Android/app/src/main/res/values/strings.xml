@@ -12,4 +12,6 @@
     <string name="todo">todo</string>
     <string name="under_maintenance">این بخش درحال آماده سازی میباشد</string>
     <string name="name">نام و نام خانوادگی</string>
+    <string name="phone">شماره موبایل</string>
+    <string name="login">ثبت نام/ورود</string>
 </resources>

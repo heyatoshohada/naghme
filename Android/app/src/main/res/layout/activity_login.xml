@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.login.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:background="@drawable/cloud"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerCrop" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,23 +23,64 @@
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/name_text_input"
+            android:id="@+id/til_name_activity_login"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/darkGray"
+            app:boxStrokeWidth="0.5dp"
+            app:boxStrokeWidthFocused="1.2dp"
+            app:hintTextColor="@color/darkMain">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/name_edit_text"
+                android:id="@+id/tiet_name_activity_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColorHighlight="@color/colorAccent"
-                android:textColorHint="@color/colorPrimary"
-                android:textColorLink="@color/colorPrimaryDark"
-                android:textColor="@color/text"
-                android:shadowColor="@color/red"
-                android:hint="@string/name" />
+                android:hint="@string/name"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="16sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_phone_activity_login"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:textSize="16sp"
+            app:boxStrokeColor="@color/darkGray"
+            app:boxStrokeWidth="0.5dp"
+            app:boxStrokeWidthFocused="1.2dp"
+            app:hintTextColor="@color/darkMain">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_phone_activity_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login_activity_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="10dp"
+            android:enabled="true"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/login"
+            android:textSize="16sp"
+            android:theme="@style/AppTheme.Button" />
 
     </LinearLayout>
 

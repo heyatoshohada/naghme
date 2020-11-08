@@ -14,4 +14,10 @@
         <item name="colorAccent">@color/progress</item>
     </style>
 
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+<!--        <item name="colorButtonNormal">@color/main</item>-->
+<!--        <item name="colorAccent">@color/main</item>-->
+        <item name="colorPrimary">@color/main</item>
+        <item name="android:textColor">@color/darkGray</item>
+    </style>
 </resources>

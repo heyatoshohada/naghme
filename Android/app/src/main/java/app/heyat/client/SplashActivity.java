@@ -51,7 +51,8 @@ public class SplashActivity extends BaseActivity {
     private void start() {
         if (getSharedLogin())
             startActivity(MainActivity.newIntent(this));
-        else startActivity(LoginActivity.newIntent(this));
+        else
+            startActivity(LoginActivity.newIntent(this));
 
         finish();
     }
