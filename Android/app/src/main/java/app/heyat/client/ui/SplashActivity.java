@@ -1,10 +1,11 @@
-package app.heyat.client;
+package app.heyat.client.ui;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.animation.AlphaAnimation;
 import android.widget.ImageView;
 
+import app.heyat.client.R;
 import app.heyat.client.base.BaseActivity;
 import app.heyat.client.ui.login.LoginActivity;
 

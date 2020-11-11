@@ -7,14 +7,18 @@
 
 
     <color name="white">#FFFFFF</color>
-    <color name="lightGray">#D8D8D8</color>
+    <color name="light_gray">#D8D8D8</color>
     <color name="deactive">#BCBCBC</color>
     <color name="active">#484848</color>
     <color name="main">#7B0057</color>
-    <color name="darkMain">#EB4C0034</color>
-    <color name="whiteEnd">#00FFFFFF</color>
-    <color name="darkGray">#333333</color>
+    <color name="dark_main">#EB4C0034</color>
+    <color name="logout_red">#BA0000</color>
+    <color name="white_end">#00FFFFFF</color>
+    <color name="dark_gray">#333333</color>
     <color name="progress">#2F2F2F</color>
+    <color name="divider">#3C3C3C</color>
+    <color name="page_title_color">#151515</color>
+    <color name="title_color">#191919</color>
     <color name="text">#0E0E0E</color>
 
 </resources>

@@ -1,14 +1,10 @@
 package app.heyat.client.ui.login;
 
-import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -16,7 +12,7 @@ import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.Objects;
 
-import app.heyat.client.MainActivity;
+import app.heyat.client.ui.MainActivity;
 import app.heyat.client.R;
 import app.heyat.client.base.BaseActivity;
 

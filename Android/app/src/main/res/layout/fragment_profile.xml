@@ -10,14 +10,13 @@
         android:id="@+id/cv_header_fragment_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="0dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
 
             <TextView
                 android:id="@+id/tv_username_fragment_profile"
@@ -25,21 +24,20 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:textColor="@color/text"
-                android:textSize="16sp"
-                android:text="username"
+                android:textSize="@dimen/page_title_size"
+                android:textStyle="bold"
                 tools:ignore="RelativeOverlap" />
 
             <ImageView
                 android:id="@+id/iv_setting_fragment_profile"
-                android:layout_width="39.1dp"
-                android:layout_height="42.7dp"
+                android:layout_width="@dimen/back_width"
+                android:layout_height="@dimen/back_height"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="14.5dp"
-                android:layout_marginBottom="2dp"
                 android:contentDescription="@string/todo"
-                android:padding="10dp"
-                android:tint="@color/darkGray"
+                android:padding="@dimen/back_padding"
+                android:tint="@color/dark_gray"
                 android:src="@drawable/ic_settings_black_24dp" />
 
 <!--            <ImageView-->

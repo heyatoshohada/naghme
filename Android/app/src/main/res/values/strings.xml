@@ -14,4 +14,11 @@
     <string name="name">نام و نام خانوادگی</string>
     <string name="phone">شماره موبایل</string>
     <string name="login">ثبت نام/ورود</string>
+    <string name="setting">تنظیمات</string>
+    <string name="account">حساب کاربری</string>
+    <string name="logout">خروج</string>
+    <string name="edit">ویرایش</string>
+    <string name="media">رسانه ها</string>
+    <string name="call">تماس با ما</string>
+    <string name="about">درباره ما</string>
 </resources>

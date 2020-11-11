@@ -7,8 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class BaseActivity extends AppCompatActivity {
 
     private static final String LOGIN_SHARED_PREFERENCES = "login_shared_preferences";
-    private static final String NAME_SHARED_PREFERENCES = "name_shared_preferences";
-    private static final String PHONE_SHARED_PREFERENCES = "phone_shared_preferences";
+    static final String NAME_SHARED_PREFERENCES = "name_shared_preferences";
+    static final String PHONE_SHARED_PREFERENCES = "phone_shared_preferences";
 
     //    Login
     protected void setSharedLogin(boolean isLogin) {
